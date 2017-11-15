@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomIcon.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace CustomIcon
         {
             InitializeComponent();
 
-            MainPage = new CustomIcon.MainPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

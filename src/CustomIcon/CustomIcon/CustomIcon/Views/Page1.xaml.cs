@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
-namespace CustomIcon
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace CustomIcon.Views
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Page1 : ContentPage
     {
-        public MainPage()
+        public Page1()
         {
             InitializeComponent();
         }
