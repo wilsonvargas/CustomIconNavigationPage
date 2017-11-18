@@ -32,6 +32,14 @@ namespace CustomIcon.iOS
             btn.SetTitle(string.Empty, UIControlState.Normal);
             btn.SetImage(img, UIControlState.Normal);
             btn.TouchUpInside += (sender, e) => mdp.IsPresented = true;
+
+
+            nc.NavigationBar.TitleTextAttributes = new UIStringAttributes() {
+                ForegroundColor = UIColor.White };
+
+            nc.NavigationBar.BackgroundColor = UIColor.Green;
+
+
             var lbbi = new UIBarButtonItem(btn);
             nc.NavigationBar.TopItem.LeftBarButtonItem = lbbi;
         }
