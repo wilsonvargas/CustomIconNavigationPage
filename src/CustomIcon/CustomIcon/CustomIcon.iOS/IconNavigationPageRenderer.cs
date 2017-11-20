@@ -16,34 +16,27 @@ namespace CustomIcon.iOS
         public override void ViewDidLayoutSubviews()
         {
             base.ViewDidLayoutSubviews();
-            SetupLeftButton();
-        }
-
-        void SetupLeftButton()
-        {
             if (!(Element is MainPage mdp)) return;
             if (!(Platform.GetRenderer(mdp.Detail) is UINavigationController nc)) return;
 
             UIButton btn = new UIButton(UIButtonType.Custom);
-            btn.SetTitleColor(btn.TintColor, UIControlState.Normal);
-
             btn.Frame = new CGRect(0, 0, 50, 44);
-            var img = UIImage.FromFile("Images/newIcon.png");
+            var img = UIImage.FromFile("newIcon.png");
             btn.SetTitle(string.Empty, UIControlState.Normal);
             btn.SetImage(img, UIControlState.Normal);
             btn.TouchUpInside += (sender, e) => mdp.IsPresented = true;
 
 
-            nc.NavigationBar.TitleTextAttributes = new UIStringAttributes() {
-                ForegroundColor = UIColor.White };
+            nc.NavigationBar.TitleTextAttributes = new UIStringAttributes()
+            {
+                ForegroundColor = UIColor.White
+            };
 
-            nc.NavigationBar.BackgroundColor = UIColor.Green;
+            nc.NavigationBar.BarTintColor = Color.FromHex("#52A7E0").ToUIColor();
 
 
             var lbbi = new UIBarButtonItem(btn);
             nc.NavigationBar.TopItem.LeftBarButtonItem = lbbi;
         }
-
-
     }
 }

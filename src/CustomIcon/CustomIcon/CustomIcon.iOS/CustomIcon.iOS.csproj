@@ -145,7 +145,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Images\newIcon.png" />
+    <BundleResource Include="Resources\newIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\page1.png" />
