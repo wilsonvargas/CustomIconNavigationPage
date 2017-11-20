@@ -13,5 +13,9 @@ Built with Xamarin.Forms with support for:
     Android
 
 
+Build status: [![Build status](https://ci.appveyor.com/api/projects/status/15xx4562lxq5vt19?svg=true)](https://ci.appveyor.com/project/wilsonvargas/customiconnavigationpage)
+
+
+
 
 ![sample](https://raw.githubusercontent.com/wilsonvargas/CustomIconNavigationPage/master/images/image.png)
